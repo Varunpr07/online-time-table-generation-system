@@ -35,7 +35,6 @@ const Header = () => {
 
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
-
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -107,11 +106,14 @@ const Header = () => {
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
                     <div
-                      onClick={(page) => {
-                        return handlePageClick(page);
+                      onClick={() => {
+                        handleCloseNavMenu();
+                        handlePageClick(page);
                       }}
                     >
-                      <Typography textAlign="center">{page}</Typography>
+                      <Typography textAlign="center">
+                        {page.toUpperCase()}
+                      </Typography>
                     </div>
                   </MenuItem>
                 ))}
@@ -129,7 +131,10 @@ const Header = () => {
               {pages.map((page) => (
                 <Button
                   key={page}
-                  onClick={() => handlePageClick(page)}
+                  onClick={() => {
+                    handleCloseNavMenu();
+                    handlePageClick(page);
+                  }}
                   sx={{ my: 2, color: "white", display: "block" }}
                 >
                   {page}
@@ -141,7 +146,7 @@ const Header = () => {
               <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   <Avatar
-                    alt={user && user.action ? "Dev" : "User"}
+                    alt={user ? "Dev" : "User"}
                     src="/static/images/avatar/2.jpg"
                   />
                 </IconButton>

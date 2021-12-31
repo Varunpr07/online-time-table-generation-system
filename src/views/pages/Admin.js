@@ -78,7 +78,11 @@ export default function Admin() {
           >
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
-                <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
+                <FormControl
+                  variant="standard"
+                  sx={{ m: 1, minWidth: 120 }}
+                  fullWidth
+                >
                   <InputLabel id="demo-simple-select-standard-label">
                     Dept
                   </InputLabel>
@@ -103,7 +107,7 @@ export default function Admin() {
                 </FormControl>
               </Grid>
               <Grid item xs={12} sm={6}>
-                <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
+                <FormControl variant="standard" sx={{ m: 1 }} fullWidth>
                   <InputLabel id="demo-simple-select-standard-label">
                     Dept
                   </InputLabel>

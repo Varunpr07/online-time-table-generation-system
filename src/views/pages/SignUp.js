@@ -60,7 +60,7 @@ export default function SignUp() {
                   autoComplete="given-name"
                   name="firstName"
                   required
-                  fullwidth
+                  fullWidth
                   id="firstName"
                   label="First Name"
                   autoFocus
@@ -69,7 +69,7 @@ export default function SignUp() {
               <Grid item xs={12} sm={6}>
                 <TextField
                   required
-                  fullwidth
+                  fullWidth
                   id="lastName"
                   label="Last Name"
                   name="lastName"
@@ -81,7 +81,7 @@ export default function SignUp() {
                   autoComplete="given-name"
                   name="dept"
                   required
-                  fullwidth
+                  fullWidth
                   id="dept"
                   label="Department"
                 />
@@ -89,7 +89,7 @@ export default function SignUp() {
               <Grid item xs={12} sm={6}>
                 <TextField
                   required
-                  fullwidth
+                  fullWidth
                   id="section"
                   label="Section"
                   name="Section"
