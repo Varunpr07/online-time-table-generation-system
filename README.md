@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# DEMO
+
+[Demo Link](https://devraj4522.github.io/online-time-table-generation-system/)
+
+## How to Access:
+
+- Login Credentials
+  - Email: `email@email.com`
+  - Password: `password`
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
