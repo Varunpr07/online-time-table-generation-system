@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/time-table-system/static/css/main.d6128912.css",
+    "main.js": "/time-table-system/static/js/main.33b91614.js",
+    "static/js/787.f70c2294.chunk.js": "/time-table-system/static/js/787.f70c2294.chunk.js",
+    "static/media/feature-icon-06.svg": "/time-table-system/static/media/feature-icon-06.f099c6bbf2c755947af79fba0269bf94.svg",
+    "static/media/feature-icon-03.svg": "/time-table-system/static/media/feature-icon-03.7591922407c4618bb2c5e85211fa6cee.svg",
+    "static/media/feature-icon-02.svg": "/time-table-system/static/media/feature-icon-02.4f1f5f7f7fed2a0d069d4f935455c6b8.svg",
+    "static/media/feature-icon-01.svg": "/time-table-system/static/media/feature-icon-01.9c67b4a0a269d7824c57e9cc4c0863a8.svg",
+    "static/media/feature-icon-04.svg": "/time-table-system/static/media/feature-icon-04.16c647da5722b36c63538e67e7176185.svg",
+    "static/media/feature-icon-05.svg": "/time-table-system/static/media/feature-icon-05.969b428e0adfcfe8aafbdedc25f25cc2.svg",
+    "static/media/logo.svg": "/time-table-system/static/media/logo.2198bbbe7fd3b3ada0e11faecc80ddc0.svg",
+    "index.html": "/time-table-system/index.html",
+    "main.d6128912.css.map": "/time-table-system/static/css/main.d6128912.css.map",
+    "main.33b91614.js.map": "/time-table-system/static/js/main.33b91614.js.map",
+    "787.f70c2294.chunk.js.map": "/time-table-system/static/js/787.f70c2294.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6128912.css",
+    "static/js/main.33b91614.js"
+  ]
+}
