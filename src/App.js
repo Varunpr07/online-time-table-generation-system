@@ -25,29 +25,26 @@ const App = () => {
   return (
     <div className="App">
       <Routes>
-        <Route
-          path="/online-time-table-generation-system/"
-          element={<Header />}
-        >
+        <Route path="/online-time-table-generation-system" element={<Header />}>
           <Route index element={<Home />} />
           <Route
-            path="/online-time-table-generation-system/login/"
+            path="/online-time-table-generation-system/login"
             element={<Login />}
           />
           <Route
-            path="/online-time-table-generation-system/signup/"
+            path="/online-time-table-generation-system/signup"
             element={<SignUp />}
           />
           <Route
-            path="/online-time-table-generation-system/dashboard/"
+            path="/online-time-table-generation-system/dashboard"
             element={<Dashboard />}
           />
           <Route
-            path="/online-time-table-generation-system/admin/"
+            path="/online-time-table-generation-system/admin"
             element={<Admin />}
           />
           <Route
-            path="/online-time-table-generation-system/help/"
+            path="/online-time-table-generation-system/help"
             element={<Help />}
           />
           <Route

@@ -1,4 +1,4 @@
-import "./PageNotFound.css";
+import { Link } from "react-router-dom";
 
 const PageNotFound = () => {
   const css = `body {
@@ -9,7 +9,6 @@ const PageNotFound = () => {
   return (
     <section className="hero body html">
       <style>{css}</style>
-      {/* <a href="/" target="_blank"> */}
       <header className="top-header"></header>
       <div>
         <div className="starsec"></div>
@@ -44,13 +43,10 @@ const PageNotFound = () => {
               target="_blanck"
               className="e-nav__link"
               style={{ color: "#fff" }}
-            >
-              a
-            </a>
+            ></a>
           </div>
         </div>
       </section>
-      {/* </a> */}
     </section>
   );
 };

@@ -17,7 +17,7 @@ import DatePicker from "@mui/lab/DatePicker";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import { TimePicker } from "@mui/lab";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { useContextValue } from "./shared/contextProvider";
 
 export default function Admin() {
@@ -230,12 +230,12 @@ export default function Admin() {
           >
             <h3 className="section-title mt-0">Administrator</h3>
             <div className="cta-cta">
-              <a
+              <Link
                 className="button button-primary button-wide-mobile"
-                href="/online-time-table-generation-system/"
+                to="/online-time-table-generation-system/"
               >
                 Create Announcement
-              </a>
+              </Link>
             </div>
           </div>
         </section>

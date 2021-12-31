@@ -69,7 +69,9 @@ const Header = () => {
               }}
             >
               <img
-                onClick={() => handlePageClick("/")}
+                onClick={() =>
+                  navigate("/online-time-table-generation-system/")
+                }
                 className="header-logo-image"
                 src={logo}
                 alt="Logo"

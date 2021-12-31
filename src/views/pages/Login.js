@@ -12,7 +12,7 @@ import Container from "@mui/material/Container";
 import { useContextValue } from "../pages/shared/contextProvider";
 import { useState } from "react";
 import { Alert } from "@mui/material";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { allActionTypes } from "./shared/reducer";
 
 const Login = () => {
@@ -37,7 +37,7 @@ const Login = () => {
     if (inputs.email === email && inputs.password === password) {
       localStorage.setItem("user", JSON.stringify(inputs));
       dispatch({ type: allActionTypes.SETUSER, action: inputs });
-      navigate("/online-time-table-generation-system/");
+      navigate("/online-time-table-generation-system/dashboard");
     } else {
       setWarning(true);
     }
@@ -113,17 +113,20 @@ const Login = () => {
             </Grid>
             <Grid item container>
               <Grid item xs>
-                <a href="/online-time-table-generation-system/" variant="body2">
+                <Link
+                  to="/online-time-table-generation-system/"
+                  variant="body2"
+                >
                   Forgot password?
-                </a>
+                </Link>
               </Grid>
               <Grid item>
-                <a
-                  href="/online-time-table-generation-system/signup/"
+                <Link
+                  to="/online-time-table-generation-system/signup/"
                   variant="body2"
                 >
                   {"Don't have an account? Sign Up"}
-                </a>
+                </Link>
               </Grid>
             </Grid>
             {warning && (

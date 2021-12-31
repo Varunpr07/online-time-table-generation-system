@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../dist/images/logo.svg";
 
 const Copyright = (props) => {
@@ -6,30 +7,32 @@ const Copyright = (props) => {
       <div className="container">
         <div className="site-footer-inner">
           <div className="brand footer-brand">
-            <a href="/online-time-table-generation-system/">
+            <Link to="/online-time-table-generation-system/">
               <img className="header-logo-image" src={logo} alt="Logo" />
-            </a>
+            </Link>
           </div>
 
           <ul className="footer-links list-reset">
             <li>
-              <a href="/online-time-table-generation-system/help/">Contact</a>
+              <Link to="/online-time-table-generation-system/help/">
+                Contact
+              </Link>
             </li>
             <li>
-              <a href="/online-time-table-generation-system/">About us</a>
+              <Link to="/online-time-table-generation-system/">About us</Link>
             </li>
             <li>
-              <a href="/online-time-table-generation-system/faq/">FAQ's</a>
+              <Link to="/online-time-table-generation-system/faq/">FAQ's</Link>
             </li>
             <li>
-              <a href="/online-time-table-generation-system/support/">
+              <Link to="/online-time-table-generation-system/support/">
                 Support
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="footer-social-links list-reset">
             <li>
-              <a href="/online-time-table-generation-system/">
+              <Link to="/online-time-table-generation-system/">
                 <span className="screen-reader-text">Facebook</span>
                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -37,10 +40,10 @@ const Copyright = (props) => {
                     fill="#0270D7"
                   />
                 </svg>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/online-time-table-generation-system/">
+              <Link to="/online-time-table-generation-system/">
                 <span className="screen-reader-text">Twitter</span>
                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -48,10 +51,10 @@ const Copyright = (props) => {
                     fill="#0270D7"
                   />
                 </svg>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/">
+              <Link to="/">
                 <span className="screen-reader-text">Google</span>
                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -59,7 +62,7 @@ const Copyright = (props) => {
                     fill="#0270D7"
                   />
                 </svg>
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="footer-copyright">

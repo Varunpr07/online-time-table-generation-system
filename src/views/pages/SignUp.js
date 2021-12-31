@@ -9,7 +9,7 @@ import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useContextValue } from "./shared/contextProvider";
 import { allActionTypes } from "./shared/reducer";
 
@@ -143,17 +143,20 @@ export default function SignUp() {
             </Button>
             <Grid container justifyContent="space-around">
               <Grid item xs={12} sm={6}>
-                <a
-                  href="/online-time-table-generation-system/login/"
+                <Link
+                  to="/online-time-table-generation-system/login/"
                   variant="body2"
                 >
                   Already have account? Sign In
-                </a>
+                </Link>
               </Grid>
               <Grid item>
-                <a href="/online-time-table-generation-system/" variant="body2">
+                <Link
+                  to="/online-time-table-generation-system/"
+                  variant="body2"
+                >
                   Home
-                </a>
+                </Link>
               </Grid>
             </Grid>
           </Box>

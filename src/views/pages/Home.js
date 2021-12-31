@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import feature1 from "../../dist/images/feature-icon-01.svg";
 import feature2 from "../../dist/images/feature-icon-02.svg";
 import feature3 from "../../dist/images/feature-icon-03.svg";
@@ -22,18 +23,18 @@ const Home = () => {
                 generated as of need.
               </p>
               <div className="hero-cta">
-                <a
+                <Link
                   className="button button-primary"
-                  href="/online-time-table-generation-system/dashboard/"
+                  to="/online-time-table-generation-system/dashboard/"
                 >
                   Get Your Time Table
-                </a>
-                <a
+                </Link>
+                <Link
                   className="button"
-                  href="/online-time-table-generation-system/help/"
+                  to="/online-time-table-generation-system/help/"
                 >
                   Get in touch
-                </a>
+                </Link>
               </div>
             </div>
             <div className="hero-figure anime-element">
@@ -237,12 +238,13 @@ const Home = () => {
                     </ul>
                   </div>
                   <div className="pricing-table-cta mb-8">
-                    <a
+                    <Link
                       className="button button-primary button-shadow button-block"
-                      href="help"
+                      Link
+                      to="/online-time-table-generation-system/help/"
                     >
                       Book Trial
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -256,12 +258,12 @@ const Home = () => {
           <div className="cta-inner section-inner">
             <h3 className="section-title mt-0">Don't have account?</h3>
             <div className="cta-cta">
-              <a
+              <Link
                 className="button button-primary button-wide-mobile"
-                href="/online-time-table-generation-system/signup/"
+                to="/online-time-table-generation-system/signup/"
               >
                 Create Account
-              </a>
+              </Link>
             </div>
           </div>
         </div>
