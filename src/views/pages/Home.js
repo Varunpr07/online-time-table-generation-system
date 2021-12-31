@@ -23,16 +23,10 @@ const Home = () => {
                 generated as of need.
               </p>
               <div className="hero-cta">
-                <Link
-                  className="button button-primary"
-                  to="/online-time-table-generation-system/dashboard/"
-                >
+                <Link className="button button-primary" to="/dashboard/">
                   Get Your Time Table
                 </Link>
-                <Link
-                  className="button"
-                  to="/online-time-table-generation-system/help/"
-                >
+                <Link className="button" to="/help/">
                   Get in touch
                 </Link>
               </div>
@@ -241,7 +235,7 @@ const Home = () => {
                     <Link
                       className="button button-primary button-shadow button-block"
                       Link
-                      to="/online-time-table-generation-system/help/"
+                      to="/help/"
                     >
                       Book Trial
                     </Link>
@@ -260,7 +254,7 @@ const Home = () => {
             <div className="cta-cta">
               <Link
                 className="button button-primary button-wide-mobile"
-                to="/online-time-table-generation-system/signup/"
+                to="/signup/"
               >
                 Create Account
               </Link>

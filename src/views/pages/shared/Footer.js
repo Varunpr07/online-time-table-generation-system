@@ -7,32 +7,28 @@ const Copyright = (props) => {
       <div className="container">
         <div className="site-footer-inner">
           <div className="brand footer-brand">
-            <Link to="/online-time-table-generation-system/">
+            <Link to="/">
               <img className="header-logo-image" src={logo} alt="Logo" />
             </Link>
           </div>
 
           <ul className="footer-links list-reset">
             <li>
-              <Link to="/online-time-table-generation-system/help/">
-                Contact
-              </Link>
+              <Link to="/help/">Contact</Link>
             </li>
             <li>
-              <Link to="/online-time-table-generation-system/">About us</Link>
+              <Link to="/">About us</Link>
             </li>
             <li>
-              <Link to="/online-time-table-generation-system/faq/">FAQ's</Link>
+              <Link to="/help/">FAQ's</Link>
             </li>
             <li>
-              <Link to="/online-time-table-generation-system/support/">
-                Support
-              </Link>
+              <Link to="/support/">Support</Link>
             </li>
           </ul>
           <ul className="footer-social-links list-reset">
             <li>
-              <Link to="/online-time-table-generation-system/">
+              <Link to="/">
                 <span className="screen-reader-text">Facebook</span>
                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -43,7 +39,7 @@ const Copyright = (props) => {
               </Link>
             </li>
             <li>
-              <Link to="/online-time-table-generation-system/">
+              <Link to="/">
                 <span className="screen-reader-text">Twitter</span>
                 <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                   <path

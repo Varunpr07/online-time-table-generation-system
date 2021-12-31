@@ -37,20 +37,14 @@ const Login = () => {
     if (inputs.email === email && inputs.password === password) {
       localStorage.setItem("user", JSON.stringify(inputs));
       dispatch({ type: allActionTypes.SETUSER, action: inputs });
-      navigate("/online-time-table-generation-system/dashboard");
+      navigate("/dashboard");
     } else {
       setWarning(true);
     }
   };
 
   if (user) {
-    return (
-      <Navigate
-        to="/online-time-table-generation-system/dashboard/"
-        replace={true}
-        state={user}
-      />
-    );
+    return <Navigate to="/dashboard/" replace={true} state={user} />;
   }
   return (
     <Container component="main" maxWidth="xs">
@@ -113,18 +107,12 @@ const Login = () => {
             </Grid>
             <Grid item container>
               <Grid item xs>
-                <Link
-                  to="/online-time-table-generation-system/"
-                  variant="body2"
-                >
+                <Link to="/" variant="body2">
                   Forgot password?
                 </Link>
               </Grid>
               <Grid item>
-                <Link
-                  to="/online-time-table-generation-system/signup/"
-                  variant="body2"
-                >
+                <Link to="/signup/" variant="body2">
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>

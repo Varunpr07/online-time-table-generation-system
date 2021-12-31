@@ -41,13 +41,7 @@ const Dashboard = () => {
   };
 
   if (!user) {
-    return (
-      <Navigate
-        to="/online-time-table-generation-system/login/"
-        replace={true}
-        state={user}
-      />
-    );
+    return <Navigate to="/login/" replace={true} state={user} />;
   }
   return (
     <>
