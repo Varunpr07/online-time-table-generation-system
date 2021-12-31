@@ -28,11 +28,17 @@ export default function SignUp() {
       password: data.get("password"),
     };
     dispatch({ type: allActionTypes.SETUSER, action: inputs });
-    navigate("/");
+    navigate("/online-time-table-generation-system/");
   };
 
   if (user) {
-    return <Navigate to="/" replace={true} state={user} />;
+    return (
+      <Navigate
+        to="/online-time-table-generation-system/"
+        replace={true}
+        state={user}
+      />
+    );
   }
 
   return (
@@ -137,12 +143,15 @@ export default function SignUp() {
             </Button>
             <Grid container justifyContent="space-around">
               <Grid item xs={12} sm={6}>
-                <a href="/login" variant="body2">
+                <a
+                  href="/online-time-table-generation-system/login/"
+                  variant="body2"
+                >
                   Already have account? Sign In
                 </a>
               </Grid>
               <Grid item>
-                <a href="/=" variant="body2">
+                <a href="/online-time-table-generation-system/" variant="body2">
                   Home
                 </a>
               </Grid>

@@ -46,7 +46,13 @@ export default function Admin() {
   };
 
   if (!user) {
-    return <Navigate to="/login" replace={true} state={user} />;
+    return (
+      <Navigate
+        to="/online-time-table-generation-system/login/"
+        replace={true}
+        state={user}
+      />
+    );
   }
 
   return (
@@ -224,7 +230,10 @@ export default function Admin() {
           >
             <h3 className="section-title mt-0">Administrator</h3>
             <div className="cta-cta">
-              <a className="button button-primary button-wide-mobile" href="/">
+              <a
+                className="button button-primary button-wide-mobile"
+                href="/online-time-table-generation-system/"
+              >
                 Create Announcement
               </a>
             </div>

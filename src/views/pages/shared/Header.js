@@ -48,7 +48,7 @@ const Header = () => {
   };
 
   const handlePageClick = (location) => {
-    navigate(location);
+    navigate("/online-time-table-generation-system/" + location);
   };
 
   const handleCloseUserMenu = () => {
@@ -142,7 +142,7 @@ const Header = () => {
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   <Avatar
                     alt={user && user.action ? "Dev" : "User"}
-                    src="/static/images/avatar/2.jpg"
+                    src="/online-time-table-generation-system/static/images/avatar/2.jpg"
                   />
                 </IconButton>
               </Tooltip>
@@ -182,7 +182,7 @@ const Header = () => {
                     onClick={() => {
                       handleCloseUserMenu();
                       dispatch({ type: allActionTypes.LOGOUT_USER });
-                      navigate("/");
+                      navigate("/online-time-table-generation-system/");
                     }}
                   >
                     <Typography component="div" textAlign="center">

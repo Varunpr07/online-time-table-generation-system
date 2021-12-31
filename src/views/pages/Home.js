@@ -22,10 +22,16 @@ const Home = () => {
                 generated as of need.
               </p>
               <div className="hero-cta">
-                <a className="button button-primary" href="/dashboard">
+                <a
+                  className="button button-primary"
+                  href="/online-time-table-generation-system/dashboard/"
+                >
                   Get Your Time Table
                 </a>
-                <a className="button" href="/help">
+                <a
+                  className="button"
+                  href="/online-time-table-generation-system/help/"
+                >
                   Get in touch
                 </a>
               </div>
@@ -252,7 +258,7 @@ const Home = () => {
             <div className="cta-cta">
               <a
                 className="button button-primary button-wide-mobile"
-                href="/signup"
+                href="/online-time-table-generation-system/signup/"
               >
                 Create Account
               </a>

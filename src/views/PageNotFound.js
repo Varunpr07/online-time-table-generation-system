@@ -40,7 +40,7 @@ const PageNotFound = () => {
           </div>
           <div className="error__nav e-nav">
             <a
-              href="/"
+              href="/online-time-table-generation-system/"
               target="_blanck"
               className="e-nav__link"
               style={{ color: "#fff" }}
