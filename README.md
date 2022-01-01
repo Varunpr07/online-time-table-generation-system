@@ -12,10 +12,8 @@
 
 **Use My Test Id**
 
-```
-  - Email: `email@email.com`
-  - Password: `password`
-```
+- Email: `email@email.com`
+- Password: `password`
 
 **Or Create Your Own Account**
 
@@ -23,19 +21,19 @@
 
 ### Home Page
 
-![ScreenShot 1](/ScreenShots\1.png)
+![ScreenShot 1](/ScreenShots/1.png)
 
 ### Dashboard with generated Timetable
 
-![ScreenShot 2](/ScreenShots\2.png)
+![ScreenShot 2](/ScreenShots/2.png)
 
 ### Add Slot
 
-![ScreenShot 2](/ScreenShots\4.png)
+![ScreenShot 2](/ScreenShots/4.png)
 
 ### Use Case Diagram
 
-![ScreenShot 3](/ScreenShots\3.jpg)
+![ScreenShot 3](/ScreenShots/3.jpg)
 
 ## Technology Profile
 
