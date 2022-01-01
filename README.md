@@ -1,80 +1,96 @@
-# DEMO
+# Online Time Table Generation System
 
-[Demo Link](https://devraj4522.github.io/online-time-table-generation-system/)
+![Current Version](https://img.shields.io/badge/version-v0.1-gree)
+![GitHub contributors](https://img.shields.io/github/contributors/devraj4522/online-time-table-generation-system)
+![GitHub stars](https://img.shields.io/github/stars/devraj4522/online-time-table-generation-system?style=social)
+
+### DEMO
+
+[Demo Link](https://online-time-table-generation-s.herokuapp.com/)
 
 ## How to Access:
 
-- Login Credentials
+**Use My Test Id**
+
+```
   - Email: `email@email.com`
   - Password: `password`
+```
 
-## Getting Started with Create React App
+**Or Create Your Own Account**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Interfaces
+
+### Home Page
+
+![ScreenShot 1](/ScreenShots\1.png)
+
+### Dashboard with generated Timetable
+
+![ScreenShot 2](/ScreenShots\2.png)
+
+### Add Slot
+
+![ScreenShot 2](/ScreenShots\4.png)
+
+### Use Case Diagram
+
+![ScreenShot 3](/ScreenShots\3.jpg)
+
+## Technology Profile
+
+- Frontend with `HTML`, `CSS`, `JS` and `React`
+- Backend with `Node Js`
+- Hosted With `Heroku`
+- Created using `create-react-app`
+- Data stored as `JSON` and `LocalStorage`
+
+## Project Structure
+
+```
+├───public
+│   └───dist
+│       ├───css
+│       ├───images
+│       └───js
+├───ScreenShots
+└───src
+    ├───dist
+    │   └───images
+    └───views
+        └───pages
+            ├───dashboard
+            ├───dist
+            │   └───images
+            └───shared
+```
+
+## Work Flows
+
+##### Students
+
+```
+  Students can login to the system and the system generates online timetable based on the classes they are enrolled.
+  If they have no account they need to register to the system and admin will verify their credentials then only he can login
+```
+
+#### Administrator
+
+```
+The administrator must login before performing any operation
+- The administrator must first register the faculty name with their department.
+- After that the administrator must input the subject details.
+```
+
+## Features
+
+- No teacher can hold two classes at the same time
+- No group can listen for two classes at the same time
+- No classroom can receive two classes at the same time
+- Class should take place in one of the allowed classrooms
+- If the subject has several forms of teaching, the preferred order for each group is the lectures, exercises, and laboratory exercises.
 
 ## Available Scripts
 
 In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`npm-start` ``
